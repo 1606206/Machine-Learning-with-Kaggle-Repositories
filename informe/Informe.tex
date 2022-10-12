@@ -41,7 +41,7 @@
 \setmargins{2.5cm}       % margen izquierdo
 {1.5cm}                        % margen superior
 {16.5cm}                      % anchura del texto
-{23.42cm}                    % altura del texto
+{23.35cm}                    % altura del texto
 {10pt}                           % altura de los encabezados
 {1cm}                           % espacio entre el texto y los encabezados
 {0pt}                             % altura del pie de página
@@ -66,7 +66,7 @@ Els atributs que tenim a la base de dades són els següents:
 	\addtocounter{enumi}{-1}
 	\item Game [integer]: ID del partit.
 	\item Date [string]: data del partit en el format "yyyy/mm/dd".
-	\item Age [integer]: edat del jugador mesurada en anys i dies.
+	\item Age [string]: edat del jugador mesurada en anys i dies.
 	\item Team [string]: equip al que pertany el jugador. 
 	\item Opp [string]: equip adversari en el partit.
 	\item Result [string]: diferència de punts del equip respecte l'adversari, acompanyat d'una lletra Win/Lose.
@@ -88,7 +88,7 @@ Els atributs que tenim a la base de dades són els següents:
 	\item blk [integer]: llançaments de dos punts bloquejats.
 	\item tov [integer]: pilotes perdudes.
 	\item pts [integer]: punts aconseguits pel jugador.
-	\item game\_score [float]: \textbf{No entenem què vol dir aquest float.}
+	\item game\_score [float]: mitjana de punts de l'equip per jugador.
 	\item minus\_plus [NaN]: diferència en el marcador respecte la entrada i la sortida del jugador.
 \end{enumerate}
 No cal netejar massa la base de dades, només hi ha tres atributs on trobem \textit{NaNs}. Els dos primers són \textit{threep} i \textit{ftp}, freqüències relatives de triples i tirs lliures respectivament, que no estan definits si no hi ha hagut cap intent (divisió per zero). L'últim atribut amb \textit{NaNs} és \textit{minus\_plus}, que té tots els valors sense definir i, per tant, descartarem aquest atribut.
@@ -273,16 +273,84 @@ Hem decidit que l'atribut objectiu serà els punts que farà Michael Jordan en c
 \newpage
 \section*{Apartat B}
 %Quin són els atributs més importants per fer una bona predicció?
-
-%Amb quin atribut s'assoleix un MSE menor?
-
-%Quina correlació hi ha entre els atributs de la vostra base de dades?
-
+Els atributs que són més importants per a una bona predicció són aquells que tinguin una correlació relativament alta. Com podem veure, aquests atributs són: \textit{fg}, \textit{fga}, \textit{fgp}, \textit{ft}, \textit{fta} i \textit{game\_score}.\\ \\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.65\linewidth]{correlation}
+	\caption{Heatmap de correlacions}
+	\label{fig:correlation}
+\end{figure}\\
 %Com influeix la normalització en la regressió?
-
+\noindent
+El fet de normalitzar les dades fa que els dominis dels atributs no desproporcionin la seva contribució al MSE, i això permet que funcioni millor el descens del gradient.\\
+\\
 %Com millora la regressió quan es filtren aquells atributs de les mostres que no contenen informació?
-
+\noindent
 %Si s'aplica un PCA, a quants components es redueix l'espai? Per què?
-
+Hem fet un PCA i hem obtingut dues components principals. Per a fer-ho hem calculat la matriu de covariàncies pels atributs numèrics, i hem buscat els valors i vectors propis. Els valors propis ens diuen quanta informació hi ha en cada component: $w=(219.4, 29.6, 22.9, 15.3, 6.9, 4, 3.6, ...)$. Les dues primeres components tenen el 70,98\% i el 9,56\% d'informació respectivament.\\
+\\
+\noindent
+%Amb quin atribut s'assoleix un MSE menor?
+L'atribut que assoleix un MSE menor és el \textit{fg}. Aquest resultat no sorpren a ningú ja que estem predint els punts que farà a partir dels tirs anotats. El millor MSE i $R^2$ score l'obtenim fent servir les dades transformades pel PCA. A la següent taula recollim el MSE i el $R^2$ score de les dades normalitzades si fem una regressió agafant només un atribut, agafant-los tots i agafant els dos primers atributs del canvi del PCA:\\
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|c|c|c|}\hline
+			Atribut	&	MSE	&	$R^2$ score	\\ \hline
+			fg & 0.161090 & 0.849104 \\ \hline
+			fga & 0.435080 & 0.592454 \\ \hline
+			fgp & 0.787710 & 0.262141 \\ \hline
+			%three & 1.058546 & 0.008445 \\ \hline
+			%threeatt & 1.021708 & 0.042952 \\ \hline
+			%threep & 1.072774 & -0.004883 \\ \hline
+			ft & 0.627369 & 0.412334 \\ \hline
+			fta & 0.639979 & 0.400523 \\ \hline
+			ftp & 0.949395 & 0.110688 \\ \hline
+			%orb & 1.037166 & 0.028472 \\ \hline
+			%drb & 1.063142 & 0.004140 \\ \hline
+			%trb & 1.045272 & 0.020879 \\ \hline
+			%ast & 1.067689 & -0.000119 \\ \hline
+			%stl & 0.983119 & 0.079099 \\ \hline
+			%blk & 1.027546 & 0.037483 \\ \hline
+			%tov & 1.059400 & 0.007645 \\ \hline
+			game\_score & 0.219541 & 0.794353 \\ \hline
+			Tots & 0.100316 & 0.895684 \\ \hline
+			PCA $n=2$ & 0.092544 & 0.920129 \\ \hline
+		\end{tabular}
+	\end{center}
+\end{table}\\
+\newpage
+\noindent
+Finalment, veurem algunes regressions. Només hem pogut fer-les unidimensionals, les regressions amb tots els atributs i amb els que ha proporcionat el PCA no les hem pogut dibuixar.
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{reg7}
+		\caption*{Tirs anotats}
+		\label{fig:reg7}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{reg8}
+		\caption*{Tirs intentats}
+		\label{fig:hist23}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{reg9}
+		\caption*{Freqüència relativa tirs}
+		\label{fig:hist24}
+	\end{subfigure}
+	\caption{Regressions amb un atribut}
+	\label{fig:hist20}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{reg24}
+	\caption{Regressió amb game\_score}
+	\label{fig:correlation}
+\end{figure}\\
 
 \end{document}

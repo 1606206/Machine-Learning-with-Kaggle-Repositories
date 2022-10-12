@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  12 OCT 2022 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  12 OCT 2022 21:08
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -1004,6 +1004,24 @@ LaTeX Warning: Label `fig:hist20' multiply defined.
 
 LaTeX Warning: Label `fig:hist20' multiply defined.
 
+
+LaTeX Warning: Label `fig:hist23' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hist23' multiply defined.
+
+
+LaTeX Warning: Label `fig:hist24' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hist24' multiply defined.
+
+
+LaTeX Warning: Label `fig:hist20' multiply defined.
+
+
+LaTeX Warning: Label `fig:correlation' multiply defined.
+
 )
 \openout1 = `Informe.aux'.
 
@@ -1262,6 +1280,31 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 [3 <./hist16.png> <./hist17.png> <./hist18.png> <./hist19.png> <./hist20.png> <
 ./hist22.png> <./hist21.png> <./hist23.png> <./hist24.png>]
+<correlation.png, id=100, 770.88pt x 578.16pt>
+File: correlation.png Graphic file (type png)
+<use correlation.png>
+Package pdftex.def Info: correlation.png  used on input line 279.
+(pdftex.def)             Requested size: 277.82788pt x 208.3668pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--321
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
 (fancyhdr)                Make it at least 34.54448pt, for example:
@@ -1270,7 +1313,41 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-24.54448pt}.
 
-[4] (Informe.aux)
+[4 <./correlation.png>]
+<reg7.png, id=109, 770.88pt x 578.16pt>
+File: reg7.png Graphic file (type png)
+<use reg7.png>
+Package pdftex.def Info: reg7.png  used on input line 328.
+(pdftex.def)             Requested size: 117.36761pt x 88.02591pt.
+<reg8.png, id=110, 770.88pt x 578.16pt>
+File: reg8.png Graphic file (type png)
+<use reg8.png>
+Package pdftex.def Info: reg8.png  used on input line 335.
+(pdftex.def)             Requested size: 117.36761pt x 88.02591pt.
+<reg9.png, id=111, 770.88pt x 578.16pt>
+File: reg9.png Graphic file (type png)
+<use reg9.png>
+Package pdftex.def Info: reg9.png  used on input line 342.
+(pdftex.def)             Requested size: 117.36761pt x 88.02591pt.
+<reg24.png, id=112, 770.88pt x 578.16pt>
+File: reg24.png Graphic file (type png)
+<use reg24.png>
+Package pdftex.def Info: reg24.png  used on input line 351.
+(pdftex.def)             Requested size: 213.71576pt x 160.28691pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--355
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (10.0pt): 
+(fancyhdr)                Make it at least 34.54448pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.54448pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-24.54448pt}.
+
+[5 <./reg7.png> <./reg8.png> <./reg9.png> <./reg24.png>] (Informe.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1278,10 +1355,10 @@ Package rerunfilecheck Info: File `Informe.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36042 strings out of 478681
- 831473 string characters out of 2846534
- 1224388 words of memory out of 3000000
- 53530 multiletter control sequences out of 15000+600000
+ 36100 strings out of 478681
+ 832322 string characters out of 2846534
+ 1224556 words of memory out of 3000000
+ 53583 multiletter control sequences out of 15000+600000
  411631 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,729b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1295,9 +1372,9 @@ rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/javie/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/javie/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ja
 vie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Informe.pdf (4 pages, 415200 bytes).
+Output written on Informe.pdf (5 pages, 677948 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
