@@ -61,6 +61,8 @@
 	En aquesta pràctica analitzarem una base de dades sobre la potabilitat de l'aigua i les diferents concentracions d'algunes substàncies. Veurem quines distribucions tenen els atributs, la relació entre ells i intentarem determinar si donada una mostra, aquesta és potable o no.
 	
 	\section*{Apartat B}
+	\textbf{Exploratory Data Analysis}\\
+	\\
 	Els atributs que tenim a la base de dades són els següents:
 	\begin{enumerate}
 		\addtocounter{enumi}{-1}
@@ -97,9 +99,24 @@
 		\includegraphics[width=0.7\linewidth]{../images/distribucions}
 		\caption{Distribucions dels atributs segons la potabilitat}
 		\label{fig:distribucions}
-	\end{figure}
-	A simple vista podem veure en la figura~\ref{fig:distribucions} que
-	\newpage
+	\end{figure}\\
+	A simple vista podem veure en la figura~\ref{fig:distribucions} que els atributs tenen una distribució gaussiana o pràcticament gaussiana. Les etiquetes de potabilitat estan balancejades (proporció 3:2).
+	\clearpage
+	\noindent
+	\textbf{Preprocessing}\\
+	\\
+	En primer lloc mirem quines variables tenen NaNs, que són pH, Sulfate i Trihalomethanes. Els valors mitjans dels atributs, tant quan l'aigua és potable com no, són molt semblants, per tant, substituim els NaNs per la mitja dels atributs.\\
+	\\
+	La variable categòrica pren només dos valors, per tant tècniques com Ordinal Encoder o OneHotEncoder no tenen gaire sentit en aquest context.\\
+	\\
+	Hi ha rangs de variables molt aixos en comparació amb uns altres. L'atribut solids té el rang més alt de l'ordre de $6\cdot10^6$
+	No tenim files repetides a la base de dades.\\
+	\\
+	
+	
+	
+	
+	
 	\section*{Apartat A}
 
 	
