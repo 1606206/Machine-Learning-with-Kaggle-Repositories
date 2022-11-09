@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  9 NOV 2022 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  9 NOV 2022 23:36
 entering extended mode
 **./informe.tex
 (informe.tex
@@ -1037,6 +1037,84 @@ LaTeX Warning: Label `fig:three sin x' multiply defined.
 
 LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
 
+
+LaTeX Warning: Label `fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `fig:aa-ph' multiply defined.
+
+
+LaTeX Warning: Label `fig:aa-ph' multiply defined.
+
+
+LaTeX Warning: Label `fig:aa-ph' multiply defined.
+
+
+LaTeX Warning: Label `fig:aa-ph' multiply defined.
+
+
+LaTeX Warning: Label `fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:knn' multiply defined.
+
+
+LaTeX Warning: Label `fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `fig:three sin x' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
+
 )
 \openout1 = `informe.aux'.
 
@@ -1173,20 +1251,15 @@ Package pdftex.def Info: ../images/correlacions.png  used on input line 85.
 File: ../images/distribucio_potabilitat.png Graphic file (type png)
 <use ../images/distribucio_potabilitat.png>
 Package pdftex.def Info: ../images/distribucio_potabilitat.png  used on input l
-ine 93.
+ine 92.
 (pdftex.def)             Requested size: 170.97pt x 120.33081pt.
 <../images/distribucions.png, id=12, 1076.02pt x 714.67pt>
 File: ../images/distribucions.png Graphic file (type png)
 <use ../images/distribucions.png>
-Package pdftex.def Info: ../images/distribucions.png  used on input line 99.
+Package pdftex.def Info: ../images/distribucions.png  used on input line 98.
 (pdftex.def)             Requested size: 299.20076pt x 198.7213pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--104
+Underfull \hbox (badness 10000) in paragraph at lines 80--103
 
  []
 
@@ -1215,52 +1288,52 @@ ges/distribucions.png>]
 <../images/cmatrix-knn.png, id=46, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-knn.png Graphic file (type png)
 <use ../images/cmatrix-knn.png>
-Package pdftex.def Info: ../images/cmatrix-knn.png  used on input line 124.
+Package pdftex.def Info: ../images/cmatrix-knn.png  used on input line 123.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-logistic.png, id=47, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-logistic.png Graphic file (type png)
 <use ../images/cmatrix-logistic.png>
-Package pdftex.def Info: ../images/cmatrix-logistic.png  used on input line 131
+Package pdftex.def Info: ../images/cmatrix-logistic.png  used on input line 130
 .
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-perceptro.png, id=48, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-perceptro.png Graphic file (type png)
 <use ../images/cmatrix-perceptro.png>
 Package pdftex.def Info: ../images/cmatrix-perceptro.png  used on input line 13
-8.
+7.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--144
+Underfull \hbox (badness 10000) in paragraph at lines 104--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--144
+Underfull \hbox (badness 10000) in paragraph at lines 104--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--144
+Underfull \hbox (badness 10000) in paragraph at lines 104--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--144
+Underfull \hbox (badness 10000) in paragraph at lines 104--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--144
+Underfull \hbox (badness 10000) in paragraph at lines 104--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--144
+Underfull \hbox (badness 10000) in paragraph at lines 104--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--144
+Underfull \hbox (badness 10000) in paragraph at lines 104--143
 
  []
 
@@ -1268,49 +1341,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--144
 File: ../images/cmatrix-svm-linear.png Graphic file (type png)
 <use ../images/cmatrix-svm-linear.png>
 Package pdftex.def Info: ../images/cmatrix-svm-linear.png  used on input line 1
-49.
+48.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-svm-poly.png, id=50, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-svm-poly.png Graphic file (type png)
 <use ../images/cmatrix-svm-poly.png>
-Package pdftex.def Info: ../images/cmatrix-svm-poly.png  used on input line 156
+Package pdftex.def Info: ../images/cmatrix-svm-poly.png  used on input line 155
 .
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-svm-sigmoid-rbf.png, id=51, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-svm-sigmoid-rbf.png Graphic file (type png)
 <use ../images/cmatrix-svm-sigmoid-rbf.png>
 Package pdftex.def Info: ../images/cmatrix-svm-sigmoid-rbf.png  used on input l
-ine 163.
+ine 162.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-random-forest.png, id=52, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-random-forest.png Graphic file (type png)
 <use ../images/cmatrix-random-forest.png>
 Package pdftex.def Info: ../images/cmatrix-random-forest.png  used on input lin
-e 173.
+e 172.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-bagging-decisiontrees.png, id=53, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-bagging-decisiontrees.png Graphic file (type png)
 <use ../images/cmatrix-bagging-decisiontrees.png>
 Package pdftex.def Info: ../images/cmatrix-bagging-decisiontrees.png  used on i
-nput line 179.
+nput line 178.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-bagging-svc.png, id=54, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-bagging-svc.png Graphic file (type png)
 <use ../images/cmatrix-bagging-svc.png>
 Package pdftex.def Info: ../images/cmatrix-bagging-svc.png  used on input line 
-188.
+187.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 <../images/cmatrix-boosting.png, id=55, 313.17pt x 262.9825pt>
 File: ../images/cmatrix-boosting.png Graphic file (type png)
 <use ../images/cmatrix-boosting.png>
-Package pdftex.def Info: ../images/cmatrix-boosting.png  used on input line 194
+Package pdftex.def Info: ../images/cmatrix-boosting.png  used on input line 193
 .
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
@@ -1331,41 +1404,41 @@ png> <../images/cmatrix-bagging-decisiontrees.png>]
 <../images/crossvalidation.png, id=76, 459.7175pt x 296.10625pt>
 File: ../images/crossvalidation.png Graphic file (type png)
 <use ../images/crossvalidation.png>
-Package pdftex.def Info: ../images/crossvalidation.png  used on input line 221.
+Package pdftex.def Info: ../images/crossvalidation.png  used on input line 220.
 
 (pdftex.def)             Requested size: 170.97pt x 110.12236pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--235
 
  []
 
@@ -1379,6 +1452,17 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 [4 <../images/cmatrix-bagging-svc.png> <../images/cmatrix-boosting.png> <../ima
 ges/crossvalidation.png>]
+<../images/pr-svm.png, id=86, 387.4475pt x 279.0425pt>
+File: ../images/pr-svm.png Graphic file (type png)
+<use ../images/pr-svm.png>
+Package pdftex.def Info: ../images/pr-svm.png  used on input line 252.
+(pdftex.def)             Requested size: 164.31752pt x 118.3424pt.
+<../images/roc-svm.png, id=87, 387.4475pt x 262.9825pt>
+File: ../images/roc-svm.png Graphic file (type png)
+<use ../images/roc-svm.png>
+Package pdftex.def Info: ../images/roc-svm.png  used on input line 258.
+(pdftex.def)             Requested size: 164.31752pt x 111.53133pt.
+
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
 (fancyhdr)                Make it at least 34.54448pt, for example:
@@ -1387,7 +1471,117 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-24.54448pt}.
 
-[5] (informe.aux)
+[5 <../images/pr-svm.png> <../images/roc-svm.png>]
+<../images/aa-ph.png, id=95, 947.54pt x 372.39125pt>
+File: ../images/aa-ph.png Graphic file (type png)
+<use ../images/aa-ph.png>
+Package pdftex.def Info: ../images/aa-ph.png  used on input line 268.
+(pdftex.def)             Requested size: 299.20076pt x 117.58797pt.
+<../images/aa-solids.png, id=96, 947.54pt x 372.39125pt>
+File: ../images/aa-solids.png Graphic file (type png)
+<use ../images/aa-solids.png>
+Package pdftex.def Info: ../images/aa-solids.png  used on input line 274.
+(pdftex.def)             Requested size: 299.20076pt x 117.58797pt.
+<../images/aa-sulfats.png, id=97, 947.54pt x 372.39125pt>
+File: ../images/aa-sulfats.png Graphic file (type png)
+<use ../images/aa-sulfats.png>
+Package pdftex.def Info: ../images/aa-sulfats.png  used on input line 280.
+(pdftex.def)             Requested size: 299.20076pt x 117.58797pt.
+
+
+Package fancyhdr Warning: \headheight is too small (10.0pt): 
+(fancyhdr)                Make it at least 34.54448pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.54448pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-24.54448pt}.
+
+[6
+
+ <../images/aa-ph.png> <../images/aa-solids.png> <../images/aa-sulfats.png>]
+<../images/aa-organic-carbon.png, id=109, 947.54pt x 373.395pt>
+File: ../images/aa-organic-carbon.png Graphic file (type png)
+<use ../images/aa-organic-carbon.png>
+Package pdftex.def Info: ../images/aa-organic-carbon.png  used on input line 28
+7.
+(pdftex.def)             Requested size: 299.20076pt x 117.90492pt.
+<../images/turbidity.png, id=110, 949.5475pt x 372.39125pt>
+File: ../images/turbidity.png Graphic file (type png)
+<use ../images/turbidity.png>
+Package pdftex.def Info: ../images/turbidity.png  used on input line 293.
+(pdftex.def)             Requested size: 299.20076pt x 117.33795pt.
+<../images/bb1.png, id=111, 387.4475pt x 262.9825pt>
+File: ../images/bb1.png Graphic file (type png)
+<use ../images/bb1.png>
+Package pdftex.def Info: ../images/bb1.png  used on input line 301.
+(pdftex.def)             Requested size: 187.78531pt x 127.46208pt.
+<../images/bb2.png, id=112, 373.395pt x 248.93pt>
+File: ../images/bb2.png Graphic file (type png)
+<use ../images/bb2.png>
+Package pdftex.def Info: ../images/bb2.png  used on input line 307.
+(pdftex.def)             Requested size: 187.78531pt x 125.19017pt.
+
+
+Package fancyhdr Warning: \headheight is too small (10.0pt): 
+(fancyhdr)                Make it at least 34.54448pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.54448pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-24.54448pt}.
+
+[7
+
+ <../images/aa-organic-carbon.png> <../images/turbidity.png> <../images/bb1.png
+> <../images/bb2.png>]
+<../resultats/C=0.001.png, id=125, 764.8575pt x 530.98375pt>
+File: ../resultats/C=0.001.png Graphic file (type png)
+<use ../resultats/C=0.001.png>
+Package pdftex.def Info: ../resultats/C=0.001.png  used on input line 318.
+(pdftex.def)             Requested size: 187.78531pt x 130.36357pt.
+<../resultats/C=1.png, id=126, 764.8575pt x 530.98375pt>
+File: ../resultats/C=1.png Graphic file (type png)
+<use ../resultats/C=1.png>
+Package pdftex.def Info: ../resultats/C=1.png  used on input line 324.
+(pdftex.def)             Requested size: 187.78531pt x 130.36357pt.
+<../resultats/C=10.png, id=127, 764.8575pt x 530.98375pt>
+File: ../resultats/C=10.png Graphic file (type png)
+<use ../resultats/C=10.png>
+Package pdftex.def Info: ../resultats/C=10.png  used on input line 333.
+(pdftex.def)             Requested size: 187.78531pt x 130.36357pt.
+<../resultats/C=100.png, id=128, 764.8575pt x 530.98375pt>
+File: ../resultats/C=100.png Graphic file (type png)
+<use ../resultats/C=100.png>
+Package pdftex.def Info: ../resultats/C=100.png  used on input line 339.
+(pdftex.def)             Requested size: 187.78531pt x 130.36357pt.
+<../resultats/degree=8.png, id=129, 346.29375pt x 229.85875pt>
+File: ../resultats/degree=8.png Graphic file (type png)
+<use ../resultats/degree=8.png>
+Package pdftex.def Info: ../resultats/degree=8.png  used on input line 348.
+(pdftex.def)             Requested size: 117.36761pt x 77.90541pt.
+<../resultats/gamma = 0.1.png, id=130, 377.41pt x 241.90375pt>
+File: ../resultats/gamma = 0.1.png Graphic file (type png)
+<use ../resultats/gamma = 0.1.png>
+Package pdftex.def Info: ../resultats/gamma = 0.1.png  used on input line 354.
+(pdftex.def)             Requested size: 117.36761pt x 75.22562pt.
+<../resultats/gamma = 10.png, id=131, 377.41pt x 241.90375pt>
+File: ../resultats/gamma = 10.png Graphic file (type png)
+<use ../resultats/gamma = 10.png>
+Package pdftex.def Info: ../resultats/gamma = 10.png  used on input line 360.
+(pdftex.def)             Requested size: 117.36761pt x 75.22562pt.
+
+
+Package fancyhdr Warning: \headheight is too small (10.0pt): 
+(fancyhdr)                Make it at least 34.54448pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.54448pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-24.54448pt}.
+
+[8
+
+ <../resultats/C=0.001.png> <../resultats/C=1.png> <../resultats/C=10.png> <../
+resultats/C=100.png> <../resultats/degree=8.png> <../resultats/gamma = 0.1.png>
+ <../resultats/gamma = 10.png>] (informe.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1395,10 +1589,10 @@ Package rerunfilecheck Info: File `informe.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35974 strings out of 478681
- 833924 string characters out of 2846534
- 1216962 words of memory out of 3000000
- 53459 multiletter control sequences out of 15000+600000
+ 36169 strings out of 478681
+ 838713 string characters out of 2846534
+ 1217037 words of memory out of 3000000
+ 53620 multiletter control sequences out of 15000+600000
  412531 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,729b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1414,9 +1608,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/j
 avie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
 Users/javie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb>
-Output written on informe.pdf (5 pages, 335260 bytes).
+Output written on informe.pdf (8 pages, 1273336 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

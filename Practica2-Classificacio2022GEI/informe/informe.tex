@@ -87,7 +87,6 @@
 		\label{fig:correlacions}
 	\end{figure}\\
 	A continuació veurem la distribució de la potabilitat~\ref{fig:distribuciopotabilitat} i les distribucions dels altres atributs segons la potabilitat~\ref{fig:distribucions}.\\
-	\\
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=0.4\linewidth]{../images/distribucio_potabilitat}
@@ -199,7 +198,7 @@
 F1 scores obtinguts:\\
 \begin{center}
 	\begin{tabular}{|c|c|c|c|}\hline
-		&SENSE PCA&		PCA&		PCA+POLYNOMIALF\\ \hline
+		&SENSE PCA&		PCA&		PCA+POLYNOMIAL\\ \hline
 		LOGISTIC REGRESSION& 0  & 0.005	& 0.46\\ \hline
 		SVM	LINEAR& 0.005	& 0		& 0.31\\ \hline
 		SVM POLY& 0.4	& 0.326	& 0.22\\ \hline
@@ -228,7 +227,7 @@ F1 scores obtinguts:\\
 	\\
 	No és eficient aplicar Leave-One-Out ja que prioritza que els conjunts d'entrenament siguin els més grans possibles, i en models amb moltes dades (+3000 en el nostre cas) compromet el rendiment consumint més temps del necessari.\\
 	\\
-	Hem calculat els accuracys per SVM, knn, regressió logística i random forest que són respectivament 0.61 , 0.56, 0.61, 0.63.\\ 
+	Hem calculat els accuracys per SVM, knn, regressió logística i random forest que són respectivament 0.61, 0.56, 0.61, 0.63.\\ 
 	\\
 	\textbf{Metric Analtyics}\\
 	\\
@@ -246,11 +245,121 @@ F1 scores obtinguts:\\
 		\end{tabular}
 	\end{center}
 	
-	
-
-	
+	\begin{figure}[!h]
+		\centering
+		\begin{subfigure}[b]{0.35\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../images/pr-svm}
+			\caption*{PR curve}
+			\label{fig:knn}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.35\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../images/roc-svm}
+			\caption*{ROC curve}
+			\label{fig:three sin x}
+		\end{subfigure}
+	\end{figure}
+	\clearpage
 	\section*{Apartat A}
-
-	
-	
+	A continuació veurem la distribucio de la potabilitat segons els atributs. És molt difícil que puguem tenir un bon model, ja que tots els punts estan molt solapats i els atributs tenen poca correlació entre ells.\\
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../images/aa-ph}
+	\caption*{pH i Hardness}
+	\label{fig:aa-ph}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../images/aa-solids}
+	\caption*{Solids i Cloramines}
+	\label{fig:aa-ph}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../images/aa-sulfats}
+	\caption*{Sulfats i Conductivitat}
+	\label{fig:aa-ph}
+\end{figure}
+\clearpage
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../images/aa-organic-carbon}
+	\caption*{Organic Carbon i Trihalomethanes}
+	\label{fig:aa-ph}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../images/turbidity}
+	\caption*{Turbidity}
+	\label{fig:aa-ph}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/bb1}
+		\caption*{PR curve amb SVM rbf}
+		\label{fig:knn}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/bb2}
+		\caption*{ROC curve amv SVM rbf}
+		\label{fig:three sin x}
+	\end{subfigure}
+\end{figure}
+\clearpage
+També hem vist els efectes de variar els valors de regularització (C, degree i $\gamma$):\\
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../resultats/C=0.001}
+		\caption*{C=0.001}
+		\label{fig:knn}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../resultats/C=1}
+		\caption*{C=1}
+		\label{fig:three sin x}
+	\end{subfigure}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../resultats/C=10}
+		\caption*{C=10}
+		\label{fig:knn}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../resultats/C=100}
+		\caption*{C=100}
+		\label{fig:three sin x}
+	\end{subfigure}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../resultats/degree=8}
+		\caption*{degree=8}
+		\label{fig:knn}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../resultats/gamma = 0.1}
+		\caption*{$\gamma$=0.1}
+		\label{fig:three sin x}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../resultats/gamma = 10}
+		\caption*{$gamma$=10}
+		\label{fig:three sin x}
+	\end{subfigure}
+\end{figure}
 \end{document}
