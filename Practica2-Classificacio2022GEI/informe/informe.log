@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  9 NOV 2022 22:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  9 NOV 2022 22:55
 entering extended mode
 **./informe.tex
 (informe.tex
@@ -1282,6 +1282,38 @@ File: ../images/cmatrix-svm-sigmoid-rbf.png Graphic file (type png)
 Package pdftex.def Info: ../images/cmatrix-svm-sigmoid-rbf.png  used on input l
 ine 163.
 (pdftex.def)             Requested size: 117.36761pt x 98.558pt.
+<../images/cmatrix-random-forest.png, id=52, 313.17pt x 262.9825pt>
+File: ../images/cmatrix-random-forest.png Graphic file (type png)
+<use ../images/cmatrix-random-forest.png>
+Package pdftex.def Info: ../images/cmatrix-random-forest.png  used on input lin
+e 173.
+(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
+<../images/cmatrix-bagging-decisiontrees.png, id=53, 313.17pt x 262.9825pt>
+File: ../images/cmatrix-bagging-decisiontrees.png Graphic file (type png)
+<use ../images/cmatrix-bagging-decisiontrees.png>
+Package pdftex.def Info: ../images/cmatrix-bagging-decisiontrees.png  used on i
+nput line 179.
+(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
+<../images/cmatrix-bagging-svc.png, id=54, 313.17pt x 262.9825pt>
+File: ../images/cmatrix-bagging-svc.png Graphic file (type png)
+<use ../images/cmatrix-bagging-svc.png>
+Package pdftex.def Info: ../images/cmatrix-bagging-svc.png  used on input line 
+188.
+(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
+<../images/cmatrix-boosting.png, id=55, 313.17pt x 262.9825pt>
+File: ../images/cmatrix-boosting.png Graphic file (type png)
+<use ../images/cmatrix-boosting.png>
+Package pdftex.def Info: ../images/cmatrix-boosting.png  used on input line 194
+.
+(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
 (fancyhdr)                Make it at least 34.54448pt, for example:
@@ -1294,49 +1326,46 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
  <../images/cmatrix-knn.png> <../images/cmatrix-logistic.png> <../images/cmatri
 x-perceptro.png> <../images/cmatrix-svm-linear.png> <../images/cmatrix-svm-poly
-.png> <../images/cmatrix-svm-sigmoid-rbf.png>]
-<../images/cmatrix-random-forest.png, id=69, 313.17pt x 262.9825pt>
-File: ../images/cmatrix-random-forest.png Graphic file (type png)
-<use ../images/cmatrix-random-forest.png>
-Package pdftex.def Info: ../images/cmatrix-random-forest.png  used on input lin
-e 174.
-(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
-<../images/cmatrix-bagging-decisiontrees.png, id=70, 313.17pt x 262.9825pt>
-File: ../images/cmatrix-bagging-decisiontrees.png Graphic file (type png)
-<use ../images/cmatrix-bagging-decisiontrees.png>
-Package pdftex.def Info: ../images/cmatrix-bagging-decisiontrees.png  used on i
-nput line 180.
-(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
-<../images/cmatrix-bagging-svc.png, id=71, 313.17pt x 262.9825pt>
-File: ../images/cmatrix-bagging-svc.png Graphic file (type png)
-<use ../images/cmatrix-bagging-svc.png>
-Package pdftex.def Info: ../images/cmatrix-bagging-svc.png  used on input line 
-189.
-(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
-<../images/cmatrix-boosting.png, id=72, 313.17pt x 262.9825pt>
-File: ../images/cmatrix-boosting.png Graphic file (type png)
-<use ../images/cmatrix-boosting.png>
-Package pdftex.def Info: ../images/cmatrix-boosting.png  used on input line 195
-.
-(pdftex.def)             Requested size: 117.36761pt x 98.558pt.
-<../images/crossvalidation.png, id=73, 459.7175pt x 296.10625pt>
+.png> <../images/cmatrix-svm-sigmoid-rbf.png> <../images/cmatrix-random-forest.
+png> <../images/cmatrix-bagging-decisiontrees.png>]
+<../images/crossvalidation.png, id=76, 459.7175pt x 296.10625pt>
 File: ../images/crossvalidation.png Graphic file (type png)
 <use ../images/crossvalidation.png>
-Package pdftex.def Info: ../images/crossvalidation.png  used on input line 206.
+Package pdftex.def Info: ../images/crossvalidation.png  used on input line 221.
 
 (pdftex.def)             Requested size: 170.97pt x 110.12236pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--215
+Underfull \hbox (badness 10000) in paragraph at lines 216--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--215
+Underfull \hbox (badness 10000) in paragraph at lines 216--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--215
+Underfull \hbox (badness 10000) in paragraph at lines 216--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--236
 
  []
 
@@ -1348,11 +1377,8 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-24.54448pt}.
 
-[4
-
- <../images/cmatrix-random-forest.png> <../images/cmatrix-bagging-decisiontrees
-.png> <../images/cmatrix-bagging-svc.png> <../images/cmatrix-boosting.png> <../
-images/crossvalidation.png>]
+[4 <../images/cmatrix-bagging-svc.png> <../images/cmatrix-boosting.png> <../ima
+ges/crossvalidation.png>]
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
 (fancyhdr)                Make it at least 34.54448pt, for example:
@@ -1371,7 +1397,7 @@ Package rerunfilecheck Info: File `informe.out' has not changed.
 Here is how much of TeX's memory you used:
  35974 strings out of 478681
  833924 string characters out of 2846534
- 1214913 words of memory out of 3000000
+ 1216962 words of memory out of 3000000
  53459 multiletter control sequences out of 15000+600000
  412531 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1388,7 +1414,7 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/j
 avie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
 Users/javie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb>
-Output written on informe.pdf (5 pages, 331562 bytes).
+Output written on informe.pdf (5 pages, 335260 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)

@@ -166,7 +166,6 @@
 	\end{subfigure}
 	\label{fig:three graphs}
 \end{figure}
-\clearpage
 \begin{figure}[!h]
 	\centering
 	\begin{subfigure}[b]{0.25\textwidth}
@@ -197,7 +196,23 @@
 		\label{fig:three sin x}
 	\end{subfigure}
 \end{figure}
-\noindent
+F1 scores obtinguts:\\
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}\hline
+		&SENSE PCA&		PCA&		PCA+POLYNOMIALF\\ \hline
+		LOGISTIC REGRESSION& 0  & 0.005	& 0.46\\ \hline
+		SVM	LINEAR& 0.005	& 0		& 0.31\\ \hline
+		SVM POLY& 0.4	& 0.326	& 0.22\\ \hline
+		SVM RBF& 0.52	&0.41	& 0.41\\ \hline
+		SVM SIGMOID& 0.52	& 0.31	& 0.38\\ \hline
+		KNN& 0.35		& 0.31	& 0.38\\ \hline
+		PERCEPTRO& 0.47		& 0.47	& 0.47\\ \hline
+		RF& 0.458		& 0.44	& 0.44\\ \hline
+		BAGGING TREE &0.52	&0.52	& 0.48\\ \hline
+		BAGGING: SVC & 0	& 0.44	&0.43\\ \hline
+		BOOSTING& 0.3 & 0.3 & 0.47\\ \hline
+	\end{tabular}
+\end{center}
 	\textbf{Crossvalidation}\\
 	\\
 	És molt important separar el conjunt d'entrenament del conjunt de test, ja que un model que sencillament repeteix les mateixes dades tindria un resultat perfecte, però no podrà predir res útil. Això es l'overfitting, per evitar-ho cross-validem els resultats per crear conjunts d'entrenament i conjunts de test diferents sobre un mateix model.\\
@@ -211,8 +226,25 @@
 	\\
 	Hem fet servir el k-fold normal, en comparació amb el punt anterior hem aconseguit augmentar l'accuracy utilitzat k=5, aquest augmenta ja que hem entrenat el model amb 5 conjunts d'entrenament i test diferents\\
 	\\
-	No es eficient aplicar Leave-One-Out ja que prioritza que els conjunts d'entrenament siguin els més grans possibles, i en models amb moltes dades (+3000 en el nostre cas) compromet el rendiment consumint més temps del necessari.
-	
+	No és eficient aplicar Leave-One-Out ja que prioritza que els conjunts d'entrenament siguin els més grans possibles, i en models amb moltes dades (+3000 en el nostre cas) compromet el rendiment consumint més temps del necessari.\\
+	\\
+	Hem calculat els accuracys per SVM, knn, regressió logística i random forest que són respectivament 0.61 , 0.56, 0.61, 0.63.\\ 
+	\\
+	\textbf{Metric Analtyics}\\
+	\\
+	Vegem les mètriques pel SVM de rbf kernel, que és el que millor F1 score ens ha donat.\\
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}\hline
+			&precision  &  recall & f1-score  & support\\ \hline
+			
+			Non-potable water   &    0.72 &     0.76 &     0.74 &      617\\ \hline
+			Potable water    &   0.55    &  0.50     & 0.53      & 366\\ \hline
+			
+			accuracy       &     &          &     0.66     &  983\\ \hline
+			macro avg       &0.64  &    0.63   &   0.63      & 983\\ \hline
+			weighted avg     &  0.66 &     0.66  &    0.66    &   983\\ \hline
+		\end{tabular}
+	\end{center}
 	
 	
 
