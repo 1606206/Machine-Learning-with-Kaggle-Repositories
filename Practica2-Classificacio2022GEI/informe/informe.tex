@@ -109,13 +109,113 @@
 	\\
 	La variable categòrica pren només dos valors, per tant tècniques com Ordinal Encoder o OneHotEncoder no tenen gaire sentit en aquest context.\\
 	\\
-	Hi ha rangs de variables molt aixos en comparació amb uns altres. L'atribut solids té el rang més alt de l'ordre de $6\cdot10^6$
+	Hi ha rangs de variables molt aixos en comparació amb uns altres. L'atribut solids té el rang més alt de l'ordre de $6\cdot10^6$, mentre que el rang del pH és de 14 i el de Turbidity és de 3. És per això que cal normalitzar les dades. La normalització que hem fet servir és la estàndar.\\
+	\\
 	No tenim files repetides a la base de dades.\\
 	\\
+	\\
+	\textbf{Model Selection}\\
+	\\	
+	Els models que hem fet són el knn amb $k=1..4$, regressió logística, SVM (lineal, polinomial, sigmoid, rbf), perceptró, random forest, bagging en decision trees i svc i, finalment, boosting.\\
+	\begin{figure}[!h]
+		\centering
+		\begin{subfigure}[b]{0.25\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../images/cmatrix-knn}
+			\caption*{Knn per $k=1..4$}
+			\label{fig:knn}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.25\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../images/cmatrix-logistic}
+			\caption*{Regressió logística}
+			\label{fig:three sin x}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.25\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../images/cmatrix-perceptro}
+			\caption*{Perceptró}
+			\label{fig:five over x}
+		\end{subfigure}
+		\label{fig:three graphs}
+	\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/cmatrix-svm-linear}
+		\caption*{SVM linear kernel}
+		\label{fig:knn}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/cmatrix-svm-poly}
+		\caption*{SVM polynomial kernel}
+		\label{fig:three sin x}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/cmatrix-svm-sigmoid-rbf}
+		\caption*{SVM sigmoid or rbf kernel}
+		\label{fig:five over x}
+	\end{subfigure}
+	\label{fig:three graphs}
+\end{figure}
+\clearpage
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/cmatrix-random-forest}
+		\caption*{Random forest}
+		\label{fig:knn}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/cmatrix-bagging-decisiontrees}
+		\caption*{Bagging en decision trees}
+		\label{fig:three sin x}
+	\end{subfigure}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/cmatrix-bagging-svc}
+		\caption*{Bagging en SVC}
+		\label{fig:knn}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/cmatrix-boosting}
+		\caption*{Boosting}
+		\label{fig:three sin x}
+	\end{subfigure}
+\end{figure}
+\noindent
+	\textbf{Crossvalidation}\\
+	\\
+	És molt important separar el conjunt d'entrenament del conjunt de test, ja que un model que sencillament repeteix les mateixes dades tindria un resultat perfecte, però no podrà predir res útil. Això es l'overfitting, per evitar-ho cross-validem els resultats per crear conjunts d'entrenament i conjunts de test diferents sobre un mateix model.\\
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{../images/crossvalidation}
+		\caption*{}
+		\label{fig:crossvalidation}
+	\end{figure}\\
+	Els resultats seran millors amb un conjunt d'entrenament més gran fins a cert punt, amb poques dades d'entrenament l'accuracy serà menor i el volem el més alt possible, però si ens passem amb el tamany del conjunt d'entrenament podem arribar a comprometre els resultats, si les categories estan desbalancejades, o el rendiment.\\
+	\\
+	Hem fet servir el k-fold normal, en comparació amb el punt anterior hem aconseguit augmentar l'accuracy utilitzat k=5, aquest augmenta ja que hem entrenat el model amb 5 conjunts d'entrenament i test diferents\\
+	\\
+	No es eficient aplicar Leave-One-Out ja que prioritza que els conjunts d'entrenament siguin els més grans possibles, i en models amb moltes dades (+3000 en el nostre cas) compromet el rendiment consumint més temps del necessari.
 	
 	
 	
-	
+
 	
 	\section*{Apartat A}
 
